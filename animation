@@ -1,0 +1,18 @@
+package lecturepractice.javafx;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class BallAnimation extends Application {
+    @Override
+    public void start(Stage stage) throws Exception {
+
+        BouncingBall ball=new BouncingBall();
+
+        Scene scene=new Scene(ball,400,500);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+}
